@@ -15,6 +15,21 @@
 
     <div class="container" id="investment-screen" style="display: none;">
         <h1>Investment Calculator</h1>
+        <label for="deposit">Deposit (ZAR):</label>
+        <input type="number" id="deposit" name="deposit">
+
+        <label for="interest-rate">Interest Rate (%):</label>
+        <input type="number" id="interest-rate" name="interest-rate" step="0.01">
+
+        <label for="term">Term (Years):</label>
+        <input type="number" id="term" name="term">
+
+        <label for="interest-type">Interest Type:</label>
+        <select name="interest-type" id="interest-type">
+            <option value="simple">Simple</option>
+            <option value="compound">Compound</option>
+        </select>
+
         <button id="back-btn-investment">Back</button>
     </div>
 
