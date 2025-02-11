@@ -48,21 +48,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Send data for investment to FastAPI
     async function calculateInvestment() {
-        const data = {
-            deposit: parseFloat(depositInput.value),
-            interestRate: parseFloat(interestRateInput.value),
-            term: parseInt(termInput.value),
-            interest_type: interestTypeInput.value
+
+        const deposit = parseFloat(depositInput.value)
+        const interestRate = parseFloat(interestRateInput.value)
+        const term = parseInt(termInput.value)
+        const interest_type = interestTypeInput.value
+
+        // Ensure all data is valid before sending request
+        if (isNaN(deposit) || isNaN(interestRate) || isNaN(term) || !interestType) {
+            investmentResult.textContent = "Please fill in all fields correctly."
+            return
         }
 
-        const response = await fetch("http://127.0.0.1:8000/calculate_investment", {
-            method: "POST",
-            headers: { "Content-Type" : "application/json"},
-            body: JSON.stringify(data)
-        })
 
-        const result = await response.json()
-        investmentResult.textContent = `Total investment: ZAR ${result.total}`
+        const data = {
+            deposit: deposit,
+            interestRate: interestRate,
+            term: term,
+            interestType: interestType
+        }
+
+        try {
+            const response = await fetch("http://127.0.0.1:8000/calculate_investment", {
+                method: "POST",
+                headers: { "Content-Type" : "application/json"},
+                body: JSON.stringify(data)
+            })
+
+            if (!response.ok) {
+                throw new Error(`Server Error: ${response.status}`)
+            }
+
+            const result = await response.json()
+            investmentResult.textContent = `Total investment: ZAR ${result.total}`
+        } catch (error) {
+            console.log("Error:", error)
+            investmentResult.textContent = "An error occurred. Please try again"
+        }
     }
 
     // Send data for bond to FastAPI
