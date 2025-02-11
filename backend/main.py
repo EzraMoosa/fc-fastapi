@@ -1,9 +1,18 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 
 app = FastAPI()
 
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credential=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 class InvestmentInput(BaseModel):
     deposit: float
