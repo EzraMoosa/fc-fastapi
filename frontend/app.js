@@ -8,6 +8,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const backBtnInvestment = document.getElementById("back-btn-investment")
     const backBtnBond = document.getElementById("back-btn-bond")
 
+
+    // Investment fields
+    const depositInput = document.getElementById("deposit")
+    const interestRateInput = document.getElementById("interest-rate")
+    const termInput = document.getElementById("term")
+    const interestTypeInput = document.getElementById("interest-type")
+    const investmentResult = document.getElementById("investment-result")
+
+    // Bond fields
+    const houseValueInput = document.getElementById("house-value")
+    const annualInterestRateInput = document.getElementById("annual-interest-rate")
+    const termMonthsInput = document.getElementById("term-months")
+    const bondResult = document.getElementById("bond-result")
+
     // Investment button event handler
     investmentBtn.addEventListener("click", function () {
         welcomeScreen.style.display = "none"
