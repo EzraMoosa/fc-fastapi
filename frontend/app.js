@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             interest_type: interestTypeInput.value
         }
 
-        const response = await fetch("http:127.0.0.1:8000/calculate_investment", {
+        const response = await fetch("http://127.0.0.1:8000/calculate_investment", {
             method: "POST",
             headers: { "Content-Type" : "application/json"},
             body: JSON.stringify(data)
@@ -64,4 +64,26 @@ document.addEventListener("DOMContentLoaded", function() {
         const result = await response.json()
         investmentResult.textContent = `Total investment: ZAR ${result.total}`
     }
+
+    // Send data for bond to FastAPI
+    async function calculateBond() {
+        const data = {
+            houseValue: parseFloat(houseValueInput.value),
+            annualInterestRate: parseFloat(annualInterestRateInput.value),
+            termMonths: parseInt(termMonthsInput.value)
+        }
+
+        const response = await fetch("http://127.0.0.1:8000/calculate_bond", {
+            method: "POST",
+            headers: { "Content-Type" : "application/json" },
+            body: JSON.stringify(data)
+        })
+
+        const result = await response.json()
+        bondResult.textContent = `Monthly repayment: ZAR ${result.montly_repayment}`
+    }
+
+    // Add event lister for changes
+    document.getElementById("investment-screen").addEventListener("change", calculateInvestment)
+    document.getElementById("bond-screen").addEventListener("change", calculateBond)
 })
