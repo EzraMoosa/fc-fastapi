@@ -45,4 +45,23 @@ document.addEventListener("DOMContentLoaded", function() {
         bondScreen.style.display = "none"
         welcomeScreen.style.display = "block"
     })
+
+    // Send data for investment to FastAPI
+    async function calculateInvestment() {
+        const data = {
+            deposit: parseFloat(depositInput.value),
+            interestRate: parseFloat(interestRateInput.value),
+            term: parseInt(termInput.value),
+            interest_type: interestTypeInput.value
+        }
+
+        const response = await fetch("http:127.0.0.1:8000/calculate_investment", {
+            method: "POST",
+            headers: { "Content-Type" : "application/json"},
+            body: JSON.stringify(data)
+        })
+
+        const result = await response.json()
+        investmentResult.textContent = `Total investment: ZAR ${result.total}`
+    }
 })
