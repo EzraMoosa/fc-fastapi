@@ -37,12 +37,31 @@ document.addEventListener("DOMContentLoaded", function() {
     backBtnInvestment.addEventListener("click", function () {
         investmentScreen.style.display = "none";
         welcomeScreen.style.display = "block";
+        resetInvestmentForm()
     });
 
     backBtnBond.addEventListener("click", function () {
         bondScreen.style.display = "none";
         welcomeScreen.style.display = "block";
+        resetBondForm()
     });
+
+    // Reset Investment fields
+    function resetInvestmentForm () {
+        depositInput.value = ""
+        interestRateInput.value = ""
+        termInput.value = ""
+        interestTypeInput.value = "simple"
+        investmentResult.textContent = ""
+    }
+
+    // Reset Bond fields
+    function resetBondForm () {
+        houseValueInput.value = ""
+        annualInterestRateInput.value = ""
+        termMonthsInput.value = ""
+        bondResult.textContent = ""
+    }
 
     // Send data for investment to FastAPI
     function calculateInvestment() {
