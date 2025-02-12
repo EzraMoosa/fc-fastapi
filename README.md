@@ -20,7 +20,7 @@ git clone https://github.com/EzraMoosa/fc-fastapi.git
 ```
 
 ### 2️⃣ Start the Backend
-Make sure you have **Python** installed. Then run:
+Make sure you have **Python** installed:
 1. Create a virutal enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
     ```sh
     python -m venv [enviroment_name]
