@@ -60,4 +60,5 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 ## 📸 Screenshots:
 Avaiable above in repo.
 
+##
 Made with ❤️ by [Ezra](https://github.com/EzraMoosa) 🚀
