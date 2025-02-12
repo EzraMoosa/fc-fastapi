@@ -7,51 +7,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container" id="welcome-screen">
-        <h1>Welcome to the Finance Calculator</h1>
-        <div id="selection">
-            <button id="investment-btn">Investment</button>
-            <button id="bond-btn">Bond</button>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>Welcome to the Finance Calculator</h1>
+            <div id="selection">
+                <button id="investment-btn">Investment</button>
+                <button id="bond-btn">Bond</button>
+            </div>
         </div>
-    </div>
 
-    <div class="container" id="investment-screen" style="display: none;">
-        <h1>Investment Calculator</h1>
-        <label for="deposit">Deposit (ZAR):</label>
-        <input type="number" id="deposit" name="deposit">
+        <!-- Investment Screen -->
+        <div id="investment-screen" style="display: none;">
+            <h1>Investment Calculator</h1>
+            <label for="deposit">Deposit (ZAR):</label>
+            <input type="number" id="deposit" name="deposit">
+    
+            <label for="interest-rate">Interest Rate (%):</label>
+            <input type="number" id="interest-rate" name="interest-rate" step="0.01">
+    
+            <label for="term">Term (Years):</label>
+            <input type="number" id="term" name="term">
+    
+            <label for="interest-type">Interest Type:</label>
+            <select name="interest-type" id="interest-type">
+                <option value="simple">Simple</option>
+                <option value="compound">Compound</option>
+            </select>
+    
+            <button id="calculate-investment" onclick="calculateInvestment()">Calculate</button>
+            <button id="back-btn-investment">Back</button>
+            <p id="investment-result"></p>
+        </div>
 
-        <label for="interest-rate">Interest Rate (%):</label>
-        <input type="number" id="interest-rate" name="interest-rate" step="0.01">
+        <!--Bond Screen -->
+        <div id="bond-screen" style="display: none;">
+            <h1>Bond Calculator</h1>
+            <label for="house-value">House Value (ZAR):</label>
+            <input type="number" id="house-value" name="house-value">
+    
+            <label for="annual-interest-rate">Annual Interest Rate (%):</label>
+            <input type="number" id="annual-interest-rate" name="annual-interest-rate" step="0.01">
+    
+            <label for="term-months">Term (Months):</label>
+            <input type="number" id="term-months" name="term-months">
+    
+            <button id="calculate-bond" onclick="calculateBond()">Calculate</button>
+            <button id="back-btn-bond">Back</button>
+            <p id="bond-result"></p>
+        </div>
+    </div> 
+    
 
-        <label for="term">Term (Years):</label>
-        <input type="number" id="term" name="term">
+    
 
-        <label for="interest-type">Interest Type:</label>
-        <select name="interest-type" id="interest-type">
-            <option value="simple">Simple</option>
-            <option value="compound">Compound</option>
-        </select>
-
-        <button id="calculate-investment" onclick="calculateInvestment()">Calculate</button>
-        <button id="back-btn-investment">Back</button>
-        <p id="investment-result"></p>
-    </div>
-
-    <div class="container" id="bond-screen" style="display: none;">
-        <h1>Bond Calculator</h1>
-        <label for="house-value">House Value (ZAR):</label>
-        <input type="number" id="house-value" name="house-value">
-
-        <label for="annual-interest-rate">Annual Interest Rate (%):</label>
-        <input type="number" id="annual-interest-rate" name="annual-interest-rate" step="0.01">
-
-        <label for="term-months">Term (Months):</label>
-        <input type="number" id="term-months" name="term-months">
-
-        <button id="calculate-bond" onclick="calculateBond()">Calculate</button>
-        <button id="back-btn-bond">Back</button>
-        <p id="bond-result"></p>
-    </div>
+    
     
 
     <script src="app.js"></script>
