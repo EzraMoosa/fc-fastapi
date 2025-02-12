@@ -16,7 +16,7 @@ A simple finance calculator built with **HTML, CSS, JavaScript, and FastAPI** to
 
 ### 1️⃣ Start the Backend
 Make sure you have **Python** installed. Then run:
-1. Activate a virutal enviroment (Replace enviroment_name with a suitable name eg. venv/ env):
+1. Activate a virutal enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
     ```sh
     python -m venv [enviroment_name]
     ```
