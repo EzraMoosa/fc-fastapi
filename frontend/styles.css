@@ -97,5 +97,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 #investment-result,
 #bond-result {
+    font-size: 1.5em;
     color: white;
 }
