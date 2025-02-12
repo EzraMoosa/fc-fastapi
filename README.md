@@ -61,4 +61,4 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 Available above in repo.
 
 ##
-Made with ❤️ by [Me - Ezra Moosa](https://github.com/EzraMoosa) 🚀
+Made with ❤️ by [Ezra Moosa](https://github.com/EzraMoosa) 🚀
