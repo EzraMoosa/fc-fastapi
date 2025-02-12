@@ -44,7 +44,7 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 
 📸 Screenshots
 ###
-<img src="screenshot/welcomescreen.png" alt="Welcome Screen" width="50%"/>
+<img src="./screenshot/welcomescreen.png" alt="Welcome Screen" width="50%"/>
 ![Investment Screen](screenshots/investmentscreen.png) 
 ![Bond Screen](screenshots/bondscreen.png)
 
