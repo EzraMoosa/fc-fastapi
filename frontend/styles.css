@@ -54,10 +54,10 @@ button:hover {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centers inputs */
+    align-items: center;
     gap: 16px;
     width: 100%;
-    max-width: 300px;  /* Prevents stretching */
+    max-width: 300px;
 }
 
 input, select {
@@ -65,4 +65,12 @@ input, select {
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
+}
+
+select {
+    position: relative;
+    left: -25%;
+    margin-left: -20px;
+    width: 50%;
 }
