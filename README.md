@@ -21,9 +21,18 @@ git clone https://github.com/EzraMoosa/fc-fastapi.git
 
 ### 2️⃣ Start the Backend
 Make sure you have **Python** installed. Then run:
-1. Activate a virutal enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
+1. Create a virutal enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
     ```sh
     python -m venv [enviroment_name]
+    ```
+2. Activate the virtual enviroment (Replace [enviroment_name] with your enviroment name from previous step):
+   Windows:
+    ```sh
+    [enviroment_name]\Scripts\activate
+    ```
+    MacOS or Linux:
+    ```sh
+    source [enviroment_name]/bin/activate
     ```
 2. Change into backend directory:
     ```sh
