@@ -21,9 +21,9 @@ Make sure you have **Python** installed. Then run:
   python -m venv [enviroment_name]
   ```
 2. Change into backend directory:
-   ```sh
-   cd backend
-   ```
+  ```sh
+  cd backend
+  ```
 3. Install all dependencies for FastAPI:
   ```sh
   pip install -r requirements.txt
@@ -43,6 +43,8 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 3. View the result instantly 📈
 
 📸 Screenshots
-![Welcome Screen](screenshots/welcomescreen.png) ![Investment Screen](screenshots/investmentscreen.png) ![Bond Screen](screenshots/bondscreen.png)
+![Welcome Screen](screenshots/welcomescreen.png) 
+![Investment Screen](screenshots/investmentscreen.png) 
+![Bond Screen](screenshots/bondscreen.png)
 
 Made with ❤️ by [Ezra](https://github.com/EzraMoosa) 🚀
