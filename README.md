@@ -37,12 +37,12 @@ Make sure you have **Python** installed. Then run:
 ### 2️⃣ Start the Frontend
 Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 
-🎯 Usage
+🎯 ## Usage
 1. Select Investment or Bond
 2. Enter your details and click Calculate
 3. View the result instantly 📈
 
-📸 Screenshots:
-### Avaiable above in repo.
+📸 ## Screenshots:
+Avaiable above in repo.
 
 Made with ❤️ by [Ezra](https://github.com/EzraMoosa) 🚀
