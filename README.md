@@ -42,10 +42,7 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 2. Enter your details and click Calculate
 3. View the result instantly 📈
 
-📸 Screenshots
-###
-<img src="./screenshot/welcomescreen.png" alt="Welcome Screen" width="50%"/>
-![Investment Screen](screenshots/investmentscreen.png) 
-![Bond Screen](screenshots/bondscreen.png)
+📸 Screenshots:
+### Avaiable above in repo.
 
 Made with ❤️ by [Ezra](https://github.com/EzraMoosa) 🚀
