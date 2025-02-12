@@ -14,7 +14,12 @@ A simple finance calculator built with **HTML, CSS, JavaScript, and FastAPI** to
 
 ## 🚀 How to Run the Project:
 
-### 1️⃣ Start the Backend
+### 1️⃣ Clone repository:
+```sh
+git clone https://github.com/EzraMoosa/fc-fastapi.git
+```
+
+### 2️⃣ Start the Backend
 Make sure you have **Python** installed. Then run:
 1. Activate a virutal enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
     ```sh
@@ -34,7 +39,7 @@ Make sure you have **Python** installed. Then run:
     ```
   Your FastAPI server should run at http://127.0.0.1:8000
 
-### 2️⃣ Start the Frontend
+### 3️⃣ Start the Frontend
 Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 
 ## 🎯 Usage
