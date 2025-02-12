@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show different screens
     investmentBtn.addEventListener("click", function () {
         welcomeScreen.style.display = "none";
-        investmentScreen.style.display = "block";
+        investmentScreen.style.display = "flex";
     });
 
     bondBtn.addEventListener("click", function () {
         welcomeScreen.style.display = "none";
-        bondScreen.style.display = "block";
+        bondScreen.style.display = "flex";
     });
 
     backBtnInvestment.addEventListener("click", function () {
