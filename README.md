@@ -58,7 +58,7 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 3. View the result instantly 📈
 
 ## 📸 Screenshots:
-Avaiable above in repo.
+Available above in repo.
 
 ##
 Made with ❤️ by [Ezra](https://github.com/EzraMoosa) 🚀
