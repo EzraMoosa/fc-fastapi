@@ -75,3 +75,8 @@ select {
     margin-left: -20px;
     width: 50%;
 }
+
+#investment-result,
+#bond-result {
+    color: white;
+}
