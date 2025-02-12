@@ -15,18 +15,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 
-.container h1 {
+#investment-screen,
+#bond-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
     color: white;
 }
 
-.container #selection {
-    display: flex;
-    gap: 16px;
-}
-
-.container #selection button {
+button {
     width: 150px;
     border: none;
     background: seagreen;
@@ -37,7 +42,7 @@ body {
     transition: 200ms ease;
 }
 
-.container #selection button:hover {
+button:hover {
     background: white;
     color: seagreen
 }
