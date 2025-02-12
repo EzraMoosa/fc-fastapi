@@ -63,6 +63,7 @@ form {
 }
 
 input, select {
+    font-family: "Poppins", sans-serif;
     padding: 10px;
     font-size: 1em;
     border: none;
