@@ -26,6 +26,7 @@ Make sure you have **Python** installed. Then run:
     python -m venv [enviroment_name]
     ```
 2. Activate the virtual enviroment (Replace [enviroment_name] with your enviroment name from previous step):
+
    Windows:
     ```sh
     [enviroment_name]\Scripts\activate
