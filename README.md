@@ -59,6 +59,10 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 
 ## 📸 Screenshots:
 ![Welcome Screen](/screenshots/welcomescreen.png)
+##
+![Investment Screen](/screenshots/investmentscreen.png)
+##
+![Bond Screen](/screenshots/bondscreen.png)
 
 ##
 Made with ❤️ by [Ezra Moosa](https://github.com/EzraMoosa) 🚀
