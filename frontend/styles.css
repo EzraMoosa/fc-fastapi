@@ -100,3 +100,12 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1.5em;
     color: white;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    color: white;
+}

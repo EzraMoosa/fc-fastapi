@@ -20,8 +20,8 @@ git clone https://github.com/EzraMoosa/fc-fastapi.git
 ```
 
 ### 2️⃣ Start the Backend
-Make sure you have **Python** installed. Then run:
-1. Create a virutal enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
+Make sure you have **Python** installed:
+1. Create a virtual enviroment (Replace [enviroment_name] with a suitable name eg. venv/ env):
     ```sh
     python -m venv [enviroment_name]
     ```
@@ -43,7 +43,7 @@ Make sure you have **Python** installed. Then run:
     ```sh
     pip install -r requirements.txt
     ```
-4. Run FastAPI server:
+4. Run FastAPI server using Uvicorn:
     ```sh
     uvicorn main:app --reload
     ```
@@ -58,7 +58,7 @@ Simply open index.html in a browser, or use Live Server/ Preview in VS Code.
 3. View the result instantly 📈
 
 ## 📸 Screenshots:
-Avaiable above in repo.
+Available above in repo.
 
 ##
-Made with ❤️ by [Ezra](https://github.com/EzraMoosa) 🚀
+Made with ❤️ by [Ezra Moosa](https://github.com/EzraMoosa) 🚀
