@@ -12,8 +12,14 @@ body {
     align-items: center;
 }
 
-h1 {
+#welcome-screen h1 {
     color: white;
+}
+
+#welcome-screen span {
+    background: -webkit-linear-gradient(0deg, seagreen, greenyellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -33,7 +39,12 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
+}
+
+#investment-screen h1, 
+#bond-screen h1{
+    color: greenyellow;
 }
 
 button {
@@ -112,5 +123,7 @@ footer p {
 
 footer span{
     font-weight: 600;
-    color: seagreen;
+    background: -webkit-linear-gradient(0deg, seagreen, greenyellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
