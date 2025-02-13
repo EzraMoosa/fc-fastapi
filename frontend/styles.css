@@ -109,3 +109,8 @@ footer {
 footer p {
     color: white;
 }
+
+footer span{
+    font-weight: 600;
+    color: seagreen;
+}
